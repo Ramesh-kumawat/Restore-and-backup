@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1080px"
+    android:layout_height="509px"
+    android:background="@drawable/bg_box_img"
+    android:id="@+id/cl_bottomsheet">
+
+
+        <ImageView
+            android:id="@+id/bts_img"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_marginStart="50px"
+            app:layout_constraintBottom_toBottomOf="@+id/bts_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bts_name"
+            app:srcCompat="@drawable/ic_baseline_filter_1_24" />
+
+    <TextView
+        android:id="@+id/bts_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:paddingRight="23dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bts_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bts_version"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="23dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="TextView"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/bts_name"
+            app:layout_constraintTop_toBottomOf="@+id/bts_name" />
+
+    <TextView
+        android:id="@+id/bts_package"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+android:lines="1"
+        android:ellipsize="end"
+
+        app:layout_constraintEnd_toStartOf="@+id/bts_backup_btn"
+        app:layout_constraintStart_toStartOf="@+id/bts_version"
+        app:layout_constraintTop_toBottomOf="@+id/bts_version" />
+
+        <TextView
+            android:id="@+id/bts_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/bts_package"
+            app:layout_constraintTop_toBottomOf="@+id/bts_package" />
+
+    <TextView
+        android:id="@+id/bts_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/bts_default"
+        app:layout_constraintTop_toBottomOf="@+id/bts_default" />
+
+        <ImageView
+            android:id="@+id/bts_backup_btn"
+            android:layout_width="242px"
+            android:layout_height="92px"
+            android:src="@drawable/back_up_btn"
+            android:text="Backup"
+            app:layout_constraintEnd_toEndOf="@+id/bts_version"
+            app:layout_constraintTop_toBottomOf="@+id/bts_version" />
+
+    <ImageView
+        android:id="@+id/bts_btn_launch"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginStart="80px"
+        android:layout_marginBottom="40px"
+        android:src="@drawable/launch_btn"
+        android:text="Launch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bts_date"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <ImageView
+        android:id="@+id/btn_bts_uninstall"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginLeft="80px"
+        android:src="@drawable/uninstall_btn"
+        android:text="Uninstall"
+        app:layout_constraintBottom_toBottomOf="@+id/bts_btn_app_info"
+        app:layout_constraintStart_toEndOf="@+id/bts_btn_app_info"
+        app:layout_constraintTop_toTopOf="@+id/bts_btn_app_info"
+        app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/bts_btn_play_store"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_marginStart="80px"
+            android:src="@drawable/play_store_btn"
+            android:text="play store "
+            app:layout_constraintBottom_toBottomOf="@+id/bts_btn_launch"
+            app:layout_constraintStart_toEndOf="@+id/bts_btn_launch"
+            app:layout_constraintTop_toTopOf="@+id/bts_btn_launch"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/bts_btn_app_info"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_marginStart="80px"
+            android:src="@drawable/info_btn"
+            android:text="App Info"
+            app:layout_constraintBottom_toBottomOf="@+id/bts_btn_play_store"
+            app:layout_constraintStart_toEndOf="@+id/bts_btn_play_store"
+            app:layout_constraintTop_toTopOf="@+id/bts_btn_play_store"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

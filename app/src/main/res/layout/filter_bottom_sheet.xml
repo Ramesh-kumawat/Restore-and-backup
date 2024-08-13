@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="1080px"
+    android:layout_height="1082px"
+    android:id="@+id/cl_filter_box"
+    android:background="@drawable/bg_box_filter">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="SORT"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/name_asc_des"
+        android:layout_width="120px"
+        android:layout_height="178px"
+        android:layout_marginTop="30px"
+        android:src="@drawable/name_order_btn"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <ImageView
+        android:id="@+id/date_order"
+        android:layout_width="120px"
+        android:layout_height="178px"
+        android:layout_marginLeft="55px"
+        android:src="@drawable/date_order_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/name_asc_des"
+        app:layout_constraintStart_toEndOf="@+id/name_asc_des"
+        app:layout_constraintTop_toTopOf="@+id/name_asc_des" />
+
+    <ImageView
+        android:id="@+id/size_order"
+        android:layout_width="120px"
+        android:layout_height="178px"
+        android:layout_marginLeft="55px"
+        android:src="@drawable/size_order_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/date_order"
+        app:layout_constraintStart_toEndOf="@+id/date_order"
+        app:layout_constraintTop_toTopOf="@+id/date_order"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <ImageView
+        android:id="@+id/up_order"
+        android:layout_width="165px"
+        android:layout_height="101px"
+        android:layout_marginTop="100px"
+        android:src="@drawable/ascending_order"
+        app:layout_constraintStart_toStartOf="@+id/name_asc_des"
+        app:layout_constraintTop_toBottomOf="@+id/name_asc_des" />
+
+    <ImageView
+        android:id="@+id/bottom_order"
+        android:layout_width="165px"
+        android:layout_height="101px"
+        android:src="@drawable/desending_order"
+        app:layout_constraintBottom_toBottomOf="@+id/up_order"
+        app:layout_constraintStart_toEndOf="@+id/up_order"
+        app:layout_constraintTop_toTopOf="@+id/up_order"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="FILTER"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/up_order"
+        app:layout_constraintTop_toBottomOf="@+id/up_order" />
+
+    <ImageView
+        android:id="@+id/us_sy_both"
+        android:layout_width="191px"
+        android:layout_height="178px"
+        android:layout_marginTop="35px"
+        android:src="@drawable/user_system_btn"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/user_order"
+        android:layout_width="120px"
+        android:layout_height="178px"
+        android:layout_marginStart="55px"
+        android:src="@drawable/user_order_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/us_sy_both"
+        app:layout_constraintStart_toEndOf="@+id/us_sy_both"
+        app:layout_constraintTop_toTopOf="@+id/us_sy_both"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/system_order"
+        android:layout_width="120px"
+        android:layout_height="178px"
+        android:layout_marginStart="55px"
+        android:src="@drawable/system_order_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/user_order"
+        app:layout_constraintStart_toEndOf="@+id/user_order"
+        app:layout_constraintTop_toTopOf="@+id/user_order"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_order" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

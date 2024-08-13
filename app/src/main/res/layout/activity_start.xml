@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.StartActivity">
+
+    <ImageView
+        android:id="@+id/logo_img"
+        android:layout_width="1080px"
+        android:layout_height="1061px"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/start_btn"
+        android:layout_width="940px"
+        android:layout_height="361px"
+        android:layout_marginTop="50px"
+        android:src="@drawable/start_btn"
+        android:text="Start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_img" />
+
+    <ImageView
+        android:id="@+id/share_app_btn"
+        android:layout_width="255px"
+        android:layout_height="192px"
+        android:src="@drawable/share_app_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/rate_app_btn"
+        app:layout_constraintStart_toEndOf="@+id/rate_app_btn"
+        app:layout_constraintTop_toTopOf="@+id/rate_app_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/privacy_app_btn"
+        android:layout_width="255px"
+        android:layout_height="192px"
+        android:src="@drawable/privacy_policy_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/share_app_btn"
+        app:layout_constraintStart_toEndOf="@+id/share_app_btn"
+        app:layout_constraintTop_toTopOf="@+id/share_app_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/rate_app_btn"
+        android:layout_width="255px"
+        android:layout_height="192px"
+        android:layout_marginLeft="78px"
+        android:src="@drawable/rate_us_btn"
+        app:layout_constraintStart_toStartOf="@+id/start_btn"
+        app:layout_constraintTop_toBottomOf="@+id/start_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
